@@ -51,12 +51,12 @@ if (age >= 18 && age <= 25) {
 }
 
 
-//ternary 
-const result = (age >= 18 && age <= 25) ? "18 - 25" : (age > 25) ? ">25" : "<18"
-console.log(result);
+//ternary
+const reesult = (age >= 18 && age <= 25) ? "18 - 25" : (age > 25) ? ">25" : "<18"
+console.log(reesult);
 
 
-// pre inc  & post inc 
+// pre inc  & post inc
 var Numberr = 10
 console.log(Numberr++);
 
@@ -80,7 +80,7 @@ console.log("hello welcome" + name + " how are you ?");
 
 console.log(`hello welcome ${name} how are you ?`);
 
-//arrays 
+//arrays
 const arr = [10, "harish", true, 10, 320, 30, 40, 50]
 
 //accessing value
@@ -184,6 +184,81 @@ function logger(a = 100) {
 const msg = logger(10)
 console.log(msg);
 console.log(logger());
+
+
+// arrow functions
+
+
+const abc = (a, ...b) => {
+    console.log(a, b);
+    return true
+}
+
+const a = abc("hello", 20, 30, 40, 50, 60, 70)
+
+
+// rest op
+
+let [a, ba, ...c] = [1, 2, 3, 4, 5, 6, 7, 8]
+
+console.log(a, ba, c);
+
+
+const a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+const newArray = []
+
+for (let index = 0; index <= a.length - 1; index++) {
+    const el = a[index] * 3
+    console.log(el);
+}
+
+// map
+
+const reeesult = a.map(harish => harish * 3)
+
+console.log(reeesult);
+
+
+const result = a.filter(num => num % 2 == 0)
+
+console.log(result);
+
+function abc() {
+    if (true) {
+        var first = "first"
+        let second = "second"
+        const third = "third"
+        console.log(second);
+        console.log(third);
+    }
+    console.log(first);
+}
+
+abc()
+
+
+// primitive string num, boolean
+
+// non [primitive ] array , obj, func
+
+let a = 30
+let b = a
+console.log(b);
+
+b = 100
+
+console.log(a);
+console.log(b);
+
+let first = [1, 2, 3]
+let second = first
+console.log(second);
+second.push(60)
+console.log(first);
+console.log(second);
+
+
+
 
 
 

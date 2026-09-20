@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        /* selector  */
+        input[name="gender"] {
+            margin: 30px;
+        }
+    </style>
 </head>
-<body style="background-color: red;">
-    
-<div>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere error optio eligendi beatae, ex distinctio labore corrupti eum ipsam eaque laboriosam, officiis veniam eos temporibus dolorem voluptates est voluptatum mollitia itaque? Repellat culpa ducimus rerum. Eum unde id illum dolore dolor nam quasi voluptatum explicabo quibusdam qui voluptate non voluptates in praesentium ut exercitationem blanditiis similique nisi, doloremque laborum veniam accusantium est molestiae facere! Explicabo non reiciendis dolore facere quos, voluptate officia tenetur eligendi possimus illum? Nihil autem sequi, numquam explicabo quaerat nobis sint ipsum reprehenderit, qui unde quae, tempora ipsam! Voluptas nesciunt sapiente velit pariatur iure aliquam eveniet atque?
-</div>
-    <script src="./script.js"></script>
+
+<body style="background-color: black; color: white; ">
+    <!-- <h1 class="one two three four "  style="background-color: red; color: white;">hello i am h1 
+<span>
+i am span inside h1 
+</span>
+</h1>
+<h2 class="second">hello i am h2</h2> -->
+    <!-- 
+<input type="text" oninput="printLog( event)">
+<button id="btn">Click me</button> -->
+
+    <label for="a">Male</label>
+    <input type="radio" name="gender" id="a" value="male">
+    <label for="b">Female</label>
+    <input type="radio" name="gender" id="b" value="female">
+
+    <label for="c">Html</label>
+    <input type="checkbox" id="c" name="course" value="html">
+    <label for="d">Css</label>
+    <input type="checkbox" id="d" name="course" value="css">
+    <label for="e">Js</label>
+    <input type="checkbox" id="e" name="course" value="js">
+    <label for="f">Ts</label>
+    <input type="checkbox" id="f" name="course" value="ts">
+
+
+    <button id="btn">Addd</button>
+    <script src="./dom.js"></script>
 </body>
 </html>
